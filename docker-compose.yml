@@ -6,7 +6,7 @@ services:
     restart: unless-stopped
     volumes:
       - ./config.json:/ServerStatus/server/config.json
-      - ./html:/usr/share/nginx/html/   #web目录
+      - ./web:/usr/share/nginx/html/   #自定义前端web
       - ./json:/usr/share/nginx/html/json
     ports:
       - 35601:35601
